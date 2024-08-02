@@ -48,14 +48,9 @@ export default function NavBar() {
 function Drawer({ isOpen, onClose }: any) {
   return (
     <div
-      className={`fixed inset-0 z-20 transition-opacity duration-500 ${ isOpen
-          ? "bg-black bg-opacity-50 opacity-100"
-          : "opacity-0 pointer-events-none"
-      }`}>
+      className={`fixed inset-0 z-20 transition-opacity duration-500 ${ isOpen  ? "bg-black bg-opacity-50 opacity-100" : "opacity-0 pointer-events-none" }`}>
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transition-transform duration-500 transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        }`}>
+        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transition-transform duration-500 transform ${ isOpen ? "translate-x-0" : "-translate-x-full" }`}>
         <div className="flex justify-end m-4">
           <IoCloseOutline size={20} onClick={onClose} className="cursor-pointer" />
         </div>
@@ -69,7 +64,7 @@ function Drawer({ isOpen, onClose }: any) {
           ))}
         </nav>
         <div className="lg:hidden xl:hidden md:hidden flex items-center gap-6 ml-2 mt-4">
-        <button className="bg-red-500 hover:bg-red-600 cursor-pointer transition-colors duration-300 w-24 h-8 rounded-full text-white lg:text-sm">
+        <button className="bg-red-500 text-sm hover:bg-red-600 cursor-pointer transition-colors duration-300 w-24 h-8 rounded-full text-white lg:text-sm">
           Visit
         </button>
       </div>
