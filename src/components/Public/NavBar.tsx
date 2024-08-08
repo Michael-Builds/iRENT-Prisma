@@ -15,7 +15,7 @@ export default function NavBar() {
   }
 
   return (
-    <section className=" bg-white flex items-center justify-between max-sm:h-[4rem] xl:h-[4rem] lg:h-[5rem] p-4 font-quicksand shadow-lg z-10 w-full fixed">
+    <section className=" bg-white flex items-center justify-between max-sm:h-[4rem] 2xl:h-[4.5rem] lg:h-[5rem] p-4 font-quicksand shadow-lg z-10 w-full fixed">
       <div className="flex items-center gap-8">
         <Image
           src={Logo}
@@ -26,14 +26,14 @@ export default function NavBar() {
           {navigation.map((item, index) => {
             return (
               <Link key={index} href={item.href} passHref>
-                <p className="cursor-pointer">{item.name}</p>
+                <p className="cursor-pointer hover:text-primary text-alt transition-colors duration-300">{item.name}</p>
               </Link>
             )
           })}
         </div>
       </div>
       <div className="max-sm:hidden flex items-center gap-6 lg:mr-8">
-        <button className="bg-red-500 hover:bg-red-600 cursor-pointer transition-colors duration-300 lg:w-24 lg:h-8 rounded-full text-white lg:text-sm">
+        <button className="bg-red-500 hover:bg-primary cursor-pointer transition-colors duration-300 lg:w-24 lg:h-8 rounded-full text-white lg:text-sm">
           Visit
         </button>
       </div>
@@ -64,7 +64,7 @@ function Drawer({ isOpen, onClose }: any) {
           ))}
         </nav>
         <div className="lg:hidden xl:hidden md:hidden flex items-center gap-6 ml-2 mt-4">
-        <button className="bg-red-500 text-sm hover:bg-red-600 cursor-pointer transition-colors duration-300 w-24 h-8 rounded-full text-white lg:text-sm">
+        <button className="bg-red-500 text-sm hover:bg-primary cursor-pointer transition-colors duration-300 w-24 h-8 rounded-full text-white lg:text-sm">
           Visit
         </button>
       </div>
