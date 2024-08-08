@@ -2,28 +2,8 @@ import React from "react"
 import LandingImage from "../../../public/images/landing.jpg"
 import Image from "next/image"
 import { FiPlay } from "react-icons/fi"
-import { RiFacebookFill } from "react-icons/ri"
-import { IoLogoLinkedin } from "react-icons/io5"
-import { FaXTwitter } from "react-icons/fa6"
 import styles from "./page.module.css"
-
-export const socials = [
-  {
-    id: 1,
-    title: "Facebook",
-    icon: <RiFacebookFill size={22} />,
-  },
-  {
-    id: 2,
-    title: "LinkedIn",
-    icon: <IoLogoLinkedin size={22} />,
-  },
-  {
-    id: 3,
-    title: "Twitter",
-    icon: <FaXTwitter size={22} />,
-  },
-]
+import { socials } from "@/utils/data"
 
 const Landing = () => {
   return (
@@ -41,11 +21,11 @@ const Landing = () => {
             </div>
           ))}
         </div>
-        <div className="flex lg:-ml-14 justify-center flex-col font-poppins max-sm:-mt-12 ">
+        <div className="flex lg:-ml-14 justify-center flex-col  max-sm:-mt-12 ">
           <p className="text-md font-bold 2xl:font-bold uppercase text-primary max-sm:text-center max-sm:text-alt max-sm:font-nunito">
             Beautiful investments
           </p>
-          <h1 className={`lg:${styles.heading} mt-4 text-3xl max-sm:text-3xl md:text-5xl 2xl:text-7xl font-semibold text-alt max-sm:text-center max-sm:mb-4`}>
+          <h1 className={`${styles.heading} mt-4 text-3xl max-sm:text-3xl font-poppins md:text-5xl 2xl:text-7xl font-semibold text-alt max-sm:text-center max-sm:mb-4`}>
             Everyone Deserves the Opportunity of the Home
           </h1>
           <p className="mt-5 mb-5 text-alt font-nunito max-sm:text-center max-sm:m-2 ">

@@ -33,7 +33,7 @@ export default function NavBar() {
         </div>
       </div>
       <div className="max-sm:hidden flex items-center gap-6 lg:mr-8">
-        <button className="bg-red-500 hover:bg-primary cursor-pointer transition-colors duration-300 lg:w-24 lg:h-8 rounded-full text-white lg:text-sm">
+        <button className="bg-primary hover:bg-orange-600 cursor-pointer transition-colors duration-300 lg:w-24 lg:h-8 rounded-full text-white lg:text-sm">
           Visit
         </button>
       </div>
