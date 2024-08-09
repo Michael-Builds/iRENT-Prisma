@@ -26,7 +26,7 @@ export default function NavBar() {
           {navigation.map((item, index) => {
             return (
               <Link key={index} href={item.href} passHref>
-                <p className="cursor-pointer hover:text-primary text-alt transition-colors duration-300">{item.name}</p>
+                <p className="cursor-pointer  text-alt hover:text-primary transition-colors duration-300">{item.name}</p>
               </Link>
             )
           })}

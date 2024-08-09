@@ -1,10 +1,23 @@
-.heading {
+.heading,
+.propheading,
+.mvpheading {
     position: relative; 
     display: inline-block; 
     margin-bottom: 1rem;
     line-height: 1.2;
   }
   
+  .propheading::after,
+  .mvpheading::after{
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: -10px; 
+    width: 8%;
+    height: 2.5px; 
+    background-color: #d47006;
+  }
+
   .heading::after {
     content: "";
     position: absolute;

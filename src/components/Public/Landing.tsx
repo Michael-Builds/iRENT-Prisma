@@ -35,7 +35,7 @@ const Landing = () => {
           </p>
           <button
             className="outline-none cursor-pointer border-primary font-nunito bg-primary hover:bg-orange-600 transition-colors duration-300 text-white xl:w-[10rem] pt-3 pb-3 rounded-sm
-            max-sm:flex max-sm:items-center max-sm:justify-center max-sm:w-[10rem] max-sm:ml-[7rem] max-sm:mt-4"
+            max-sm:flex max-sm:items-center max-sm:text-xs max-sm:justify-center max-sm:w-[10rem] max-sm:ml-[7rem] max-sm:mt-4"
           >
             View Properties
           </button>
@@ -49,7 +49,7 @@ const Landing = () => {
         </div>
         {/* Play Button */}
         <div className={`${styles.animate} absolute left-0 xl:left-12 2xl:left-16 top-1/2 transform -translate-y-1/2 cursor-pointer bg-white shadow-xl w-24 h-24 p-2 rounded-full flex items-center justify-center max-sm:left-1/2 max-sm:top-1/2 max-sm:transform max-sm:-translate-x-1/2 max-sm:-translate-y-1/2`}>
-          <div className={` bg-primary hover:bg-red-500 transition-colors duration-300 h-full w-full rounded-full text-white flex items-center justify-center`}>
+          <div className={` bg-primary hover:bg-orange-600 transition-colors duration-300 h-full w-full rounded-full text-white flex items-center justify-center`}>
             <FiPlay size={20} />
           </div>
         </div>

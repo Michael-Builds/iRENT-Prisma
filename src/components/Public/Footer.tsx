@@ -26,9 +26,9 @@ export const socials = [
 export default function Footer() {
   return (
     <footer className="footer ">
-      <div className="flex flex-col lg:flex-row  items-center justify-between mb-4">
+      <div className="flex flex-col lg:flex-row items-center justify-between mb-4">
         {/* About Us */}
-        <div className="flex flex-col gap-12 mb-4 lg:mb-0 max-sm:-ml-[9rem]">
+        <div className="flex flex-col gap-12 mb-4 lg:mb-0 max-sm:-ml-[9rem] ">
           <h1 className="font-bold -mb-8 text-left text-xl">About Us</h1>
           <p className="max-w-[15rem] text-left text-sm">
             Heaven fruitful doesn't over lesser days appear creeping seasons so
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         {/* Contact Info */}
         <div className="flex flex-col gap-12 mb-4 lg:mb-0 max-sm:-ml-[9rem]">
-          <h1 className="font-bold -mb-8 text-left text-xl">Contact Info.</h1>
+          <h1 className="font-bold  -mb-8 text-left text-xl">Contact Info.</h1>
           <div className="flex flex-col gap-2">
             {contactInfo.map((item, index) => (
               <div
@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
       </div>
       <hr className="max-sm:hidden"/>
-      <div className="mt-6 flex flex-col max-sm:flex-col max-sm:items-center max-sm:justify-center items-center justify-between">
+      <div className="mt-6 flex flex-row max-sm:flex-col max-sm:items-center max-sm:justify-center items-center justify-between">
       <div className="flex items-center gap-2 text-sm max-sm:mb-4">
         <p className="whitespace-nowrap">Copyright © {getCurrentYear()}</p>
         <p className="whitespace-nowrap">All Rights Reserved</p>

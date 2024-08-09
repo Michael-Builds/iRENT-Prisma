@@ -7,9 +7,9 @@ import { aboutItems } from "@/utils/data"
 
 const About = () => {
   return (
-    <section className="lg:h-full w-full flex lg:flex-row flex-col items-center p-6">
+    <section className="lg:h-full w-full flex lg:flex-row flex-col items-center p-6 lg:-mt-24 ">
       {/* Left */}
-      <div className=" w-full h-full lg:mt-12 -mt-16 justify-center lg:-mb-[20rem]">
+      <div className=" w-full h-full lg:mt-12 -mt-16 justify-center lg:-mb-[15rem] 2xl:-mb-[40rem] ">
         <div className={`${styles.image} relative overflow-hidden p-5 pe-0 `}>
           <div className="absolute top-0 left-0 w-full h-full transform -skew-x-20 z-1"></div>
           <Image
@@ -20,7 +20,7 @@ const About = () => {
         </div>
       </div>
       {/* Right */}
-      <div className="w-full lg:-mt-32 mt-8 h-full flex flex-col gap-4 justify-center lg:pl-32 lg:-mb-[20rem]">
+      <div className="w-full lg:-mt-32 mt-8 h-full flex flex-col gap-4 justify-center lg:pl-32 lg:-mb-[15rem] 2xl:-mb-[30rem]">
         <h1
           className={`${styles.heading} mb-8 font-poppins 2xl:text-5xl lg:text-5xl text-3xl font-semibold text-alt`}
         >
@@ -43,7 +43,7 @@ const About = () => {
         </div>
         <button
           className=" mt-6 outline-none cursor-pointer border-primary font-nunito bg-primary hover:bg-orange-600 transition-colors duration-300 text-white xl:w-[10rem] pt-3 pb-3 rounded-sm
-            max-sm:flex max-sm:items-center max-sm:justify-center max-sm:w-[10rem] max-sm:ml-[6rem] max-sm:mt-4"
+            max-sm:flex max-sm:items-center max-sm:justify-center max-sm:text-xs max-sm:w-[10rem] max-sm:ml-[6rem] max-sm:mt-4"
         >
           Read More
         </button>
